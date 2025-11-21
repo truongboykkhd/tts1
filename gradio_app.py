@@ -12,9 +12,9 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"🖥️ Sử dụng thiết bị: {device.upper()}")
 
 tts = VieNeuTTS(
-    backbone_repo="pnnbao-ump/VieNeu-TTS-1000h",
+    backbone_repo="truongboykkhd/VieNeu-TTS-1000h",
     backbone_device=device,
-    codec_repo="neuphonic/neucodec",
+    codec_repo="truongboykkhd/neucodec",
     codec_device=device
 )
 print("✅ Model đã tải xong!")
