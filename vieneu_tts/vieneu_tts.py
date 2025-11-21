@@ -37,9 +37,9 @@ def _linear_overlap_add(frames: list[np.ndarray], stride: int) -> np.ndarray:
 class VieNeuTTS:
     def __init__(
         self,
-        backbone_repo="pnnbao-ump/VieNeu-TTS-1000h",
+        backbone_repo="truongboykkhd/VieNeu-TTS-1000h",
         backbone_device="cpu",
-        codec_repo="neuphonic/neucodec",
+        codec_repo="truongboykkhd/neucodec",
         codec_device="cpu",
     ):
 
