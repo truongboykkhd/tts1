@@ -99,13 +99,13 @@ class VieNeuTTS:
     def _load_codec(self, codec_repo, codec_device):
         print(f"Loading codec from: {codec_repo} on {codec_device} ...")
         match codec_repo:
-            case "neuphonic/neucodec":
+            case "truongboykkhd/neucodec":
                 self.codec = NeuCodec.from_pretrained(codec_repo)
                 self.codec.eval().to(codec_device)
-            case "neuphonic/distill-neucodec":
+            case "truongboykkhd/distill-neucodec":
                 self.codec = DistillNeuCodec.from_pretrained(codec_repo)
                 self.codec.eval().to(codec_device)
-            case "neuphonic/neucodec-onnx-decoder":
+            case "truongboykkhd/neucodec-onnx-decoder":
                 if codec_device != "cpu":
                     raise ValueError("Onnx decoder only currently runs on CPU.")
                 try:
