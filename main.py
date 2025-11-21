@@ -15,7 +15,7 @@ input_texts = [
 output_dir = "./output_audio"
 os.makedirs(output_dir, exist_ok=True)
 
-def main(backbone="pnnbao-ump/VieNeu-TTS-1000h", codec="neuphonic/neucodec"):
+def main(backbone="truongboykkhd/VieNeu-TTS-1000h", codec="truongboykkhd/neucodec"):
     """
     In the sample directory, there are 7 wav files and 7 txt files with matching names.
     These are pre-prepared reference files for testing:
